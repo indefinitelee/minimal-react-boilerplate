@@ -4,7 +4,7 @@
   "description": "from https://www.robinwieruch.de/minimal-react-webpack-babel-setup/",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config ./config ./webpack.config.s --mode development", 
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development", 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
