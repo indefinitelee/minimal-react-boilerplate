@@ -1,5 +1,8 @@
+const webpack = require('webpack');
+
 module.exports = {
   entry: [
+		'react-hot-loader/patch',
     './src/index.js'
 	],
 	module: {
@@ -18,8 +21,12 @@ module.exports = {
     path: __dirname + '/dist',
     publicPath: '/',
     filename: 'bundle.js'
-  },
+	},
+	plugins: [
+		new webpack.HotModuleReplacementPlugin()
+	],
   devServer: {
-    contentBase: './dist'
+		contentBase: './dist',
+		hot: true
   }
 };
