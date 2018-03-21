@@ -4,6 +4,7 @@
   "description": "from https://www.robinwieruch.de/minimal-react-webpack-babel-setup/",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server --config ./config ./webpack.config.s --mode development", 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/indefinitelee/minimal-react-boilerplate/issues"
   },
-  "homepage": "https://github.com/indefinitelee/minimal-react-boilerplate#readme"
+  "homepage": "https://github.com/indefinitelee/minimal-react-boilerplate#readme",
+  "devDependencies": {
+    "webpack": "^4.2.0",
+    "webpack-cli": "^2.0.12",
+    "webpack-dev-server": "^3.1.1"
+  }
 }
